@@ -31,10 +31,10 @@ The project includes the following components:
    cd aws_infra_capstone_project
     ```
 
-3. Navigate to the `terraform` directory:
+3. Navigate to the `terraform` directory: (Select the specific directory within terraform directory)
 
     ```bash
-   cd terraform
+   cd terraform/sample_ec2_testing
    ```
 
 4. Modify the `terraform.tfvars` file with your desired configurations. This file contains variables for the VPC, subnets, EC2 instances, and EKS cluster.
