@@ -31,15 +31,64 @@ The project includes the following components:
    cd aws_infra_capstone_project
     ```
 
-3. Navigate to the `terraform` directory: (Select the specific directory within terraform directory)
+## Deploy Sample EC2 Instance
+
+Perform the following steps to deploy an EC2 using terraform.
+
+1. Navigate to the `terraform/sample_ec2_testing` directory:
 
     ```bash
    cd terraform/sample_ec2_testing
    ```
 
-4. Modify the `terraform.tfvars` file with your desired configurations. This file contains variables for the VPC, subnets, EC2 instances, and EKS cluster.
+2. Modify the `terraform.tfvars` file with your desired configurations. This file contains variables for EC2
 
-5. Initialize Terraform:
+2. Initialize Terraform:
+
+   ```bash
+    terraform init
+    ```
+
+6. Plan the infrastructure:
+
+    ```bash
+   terraform plan
+   ```
+
+7. Apply the infrastructure:
+
+   ```bash
+    terraform apply
+    ```
+
+8. Destroy
+
+    ```bash
+   terraform destroy
+   ```
+
+9. Clean up
+
+    ```bash
+    rm -rf .terraform
+    rm -rf terraform.tfstate
+    rm -rf terraform.tfstate.backup
+    rm -rf .terraform.lock.hcl
+    ```
+
+## Deploy VPC, EKS, and Kubernetes App
+
+Perform the following steps to deploy a sample EC2 instance for testing the terraform functionality.
+
+1. Navigate to the `terraform/kubernetes` directory:
+
+    ```bash
+   cd terraform/kubernetes
+   ```
+
+2. Modify the `terraform.tfvars` file with your desired configurations. This file contains variables for the VPC, subnets, EC2 instances, and EKS cluster.
+
+2. Initialize Terraform:
 
    ```bash
     terraform init
