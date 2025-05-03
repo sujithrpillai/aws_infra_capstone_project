@@ -120,3 +120,7 @@ Perform the following steps to deploy a sample EC2 instance for testing the terr
     rm -rf terraform.tfstate.backup
     rm -rf .terraform.lock.hcl
     ```
+
+## LICENSE
+
+Code reused from Copyright (c) 2020 HashiCorp, Inc. content at https://github.com/hashicorp-education/learn-terraform-provision-eks-cluster licensed with [MPL 2.0](LICENSE).
